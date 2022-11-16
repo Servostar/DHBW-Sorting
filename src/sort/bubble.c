@@ -1,14 +1,13 @@
 #include "../arrays.h"
 #include "../sort.h"
 
-void bubble(int* arr, int len) {
-  
-  for (int x = 0; x < len - 1; x++) {
+// always shift the biggest element up to the right
+void bubble(int *arr, int len) {
 
-    for (int y = x; y < len; y++) {
-      if (arr[y] > arr[y + 1]) {
+  for (int x = 0; x < len - 1; x++)
+
+    for (int y = 0; y < len - x - 1; y++)
+      if (arr[y] > arr[y + 1])
+        // current element is bigger, shift to the right
         swap(arr + y, arr + y + 1);
-      }
-    }
-  }
 }
