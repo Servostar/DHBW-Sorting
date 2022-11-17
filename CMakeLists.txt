@@ -14,4 +14,5 @@ add_executable(
   src/sort/selection.c
   src/sort/insertion.c
   src/sort/quick.c
+  src/sort/merge.c
   )

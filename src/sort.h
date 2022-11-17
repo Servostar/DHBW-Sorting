@@ -6,5 +6,7 @@ void selection(int*,int);
 void insertion(int*,int);
 void quick(int*,int);
 void merge(int*,int);
+void radix(int*,int);
+void bogo(int*,int);
 
 #endif
