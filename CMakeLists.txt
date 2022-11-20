@@ -15,4 +15,7 @@ add_executable(
   src/sort/insertion.c
   src/sort/quick.c
   src/sort/merge.c
+  src/sort/gnome.c
+  src/sort/bogo.c
+  src/sort/bozo.c
   )

@@ -5,7 +5,8 @@
 #include <stdio.h>
 #include <time.h>
 
-void benchmark_sort(void (*algorithm)(int *, int), const char *name, int *,
-                    int);
+typedef void(sort)(int*,int);
+
+void benchmark_sort(sort, const char *, int *,int);
 
 #endif

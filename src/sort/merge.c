@@ -2,5 +2,5 @@
 #include "../sort.h"
 
 void merge(int *arr, int len) {
-  
+   
 }
