@@ -18,4 +18,6 @@ add_executable(
   src/sort/gnome.c
   src/sort/bogo.c
   src/sort/bozo.c
+  src/sort/shell.c
+  src/sort/radix.c
   )
