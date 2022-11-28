@@ -5,7 +5,7 @@
 #include <time.h>
 
 int main() {
-  const int LEN = 10;
+  const int LEN = 20;
 
   int *arr = (int *)malloc(sizeof(int) * LEN);
 
@@ -17,8 +17,9 @@ int main() {
   benchmark_sort(insertion, "insertion-sort", arr, LEN);
   benchmark_sort(quick, "quick-sort", arr, LEN);
   benchmark_sort(gnome, "gnome-sort", arr, LEN);
-  benchmark_sort(bozo, "bozo-sort", arr, LEN);
-  benchmark_sort(bogo, "bogo-sort", arr, LEN);
+  benchmark_sort(merge, "merge-sort", arr, LEN);
+//  benchmark_sort(bozo, "bozo-sort", arr, LEN);
+//  benchmark_sort(bogo, "bogo-sort", arr, LEN);
 
   //print_array(arr, LEN);
 
