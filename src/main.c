@@ -4,24 +4,22 @@
 #include <stdlib.h>
 #include <time.h>
 
+const int LEN = 10000;
+
+const Sort TESTS[] = {
+    {"bubble", bubble},       {"gnome", gnome}, {"selection", selection},
+    {"quick", quick},         {"merge", merge}, {"shell", shell},
+    {"insertion", insertion}, {"radix", radix},
+};
+
 int main() {
-  const int LEN = 20;
 
   int *arr = (int *)malloc(sizeof(int) * LEN);
 
   populate(arr, LEN);
   srand(time(NULL));
 
-  benchmark_sort(bubble, "bubble-sort", arr, LEN);
-  benchmark_sort(selection, "selection-sort", arr, LEN);
-  benchmark_sort(insertion, "insertion-sort", arr, LEN);
-  benchmark_sort(quick, "quick-sort", arr, LEN);
-  benchmark_sort(gnome, "gnome-sort", arr, LEN);
-  benchmark_sort(merge, "merge-sort", arr, LEN);
-//  benchmark_sort(bozo, "bozo-sort", arr, LEN);
-//  benchmark_sort(bogo, "bogo-sort", arr, LEN);
-
-  //print_array(arr, LEN);
+  benchmark(TESTS, sizeof(TESTS) / sizeof(Sort), arr, LEN);
 
   free(arr);
 
