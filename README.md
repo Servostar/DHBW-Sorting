@@ -1,4 +1,8 @@
 # DHBW-Sorting
+
+> NOTE:
+> Repository has been moved to: https://git.teridax.de/DHBW/C-Programming
+
 C implementation and benchmarking of the sorting algorithms from class.
 It contains code for benchmarking serveral sorting algorithms. The algorithms are not designed to be the best version of them but to be simple and easy to understand. They do not share common charasteristics such as working in-place or being stable. Focus for this project was on simplicity and getting a basic comparison done.
 All of them sort the same array of integers which is filled with values between `[0..len]` with `len`being the size of the array. Depending on the case the order is swapped, randomized or already sorted.
